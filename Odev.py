@@ -15,3 +15,5 @@ print(f"Toplam = {topla}")
 print(f"Toplam = {sayi1 + sayi2}")
 
 
+#deneme
+
