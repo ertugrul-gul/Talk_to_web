@@ -15,7 +15,3 @@ print("{0} {1}".format("=", sayi1 + sayi2))
 print(f"{sayi1} + {sayi2} = {topla}")
 print(f"Toplam = {topla}")
 print(f"Toplam = {sayi1 + sayi2}")
-
-
-#deneme
-
