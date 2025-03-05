@@ -1,3 +1,13 @@
+import re
+from collections import Counter
+
+import strip
+import string
+
+'''
+
+'''
+
 my_str = """It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
     However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered the rightful property of some one or other of their daughters.
     My dear Mr. Bennet,” said his lady to him one day, “have you heard that Netherfield Park is let at last?”
@@ -24,4 +34,40 @@ my_str = """It is a truth universally acknowledged, that a single man in possess
     But it is very likely that he may fall in love with one of them, and therefore you must visit him as soon as he comes.
     I see no occasion for that.
     You and the girls may go, or you may send them by themselves, which perhaps will be still better, for as you are as handsome as any of them, Mr. Bingley might like you the best of the party."""
+
+
+
+#---------------------------Başlangıç kodu---------------------------
+frequency = Counter (my_str.split())
+frequency_dict =dict(frequency)
+print(type(frequency_dict))
+
+for k,v in frequency_dict.items():
+    print (k,v)
+
+
+#------------------------- Tüm kelimeler küçük harfe dönüştürüldü------------------
+lower_my_str = my_str.lower()
+frequency = Counter (lower_my_str.split())
+frequency_dict =dict(frequency)
+print(type(frequency_dict))
+
+for k,v in frequency_dict.items():
+    print (k,v)
+
+
+#------------------------- Kelime içindeki noktalama işaretlerini kaldırmak için------------------
+lower_my_str = my_str.lower()
+lower_my_str0 = lower_my_str.replace(",", "").replace(".", "").replace("!", "",).replace("?", "",).replace ("“", "").replace("”", "",).replace(";", "")
+frequency = Counter (lower_my_str0.split())
+frequency_dict =dict(frequency)
+
+print(type(frequency_dict))
+
+for k,v in frequency_dict.items():
+    print (k,v)
+
+
+
+
 
