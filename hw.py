@@ -1,3 +1,4 @@
+import pprint
 import re
 from collections import Counter
 
@@ -63,9 +64,10 @@ frequency = Counter (lower_my_str0.split())
 frequency_dict =dict(frequency)
 
 print(type(frequency_dict))
+pprint.pprint(frequency_dict)
 
-for k,v in frequency_dict.items():
-    print (k,v)
+#for k,v in frequency_dict.items():
+#print (k,v)
 
 
 
