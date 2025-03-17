@@ -10,3 +10,8 @@ print(mystring[-1:0:-3])
 
 my_str = 'deneme bir şey deniyoruz "bunu nasıl göstereceksin"'
 print (my_str)
+
+
+
+for x in [1, 2, 3, 4, 5, 6, 7, 8, 9]:
+    print (x)
