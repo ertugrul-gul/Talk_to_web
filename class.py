@@ -1,73 +1,71 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
-
-"""class ogrenci():
-    isim1 = ""
-    print("bu sınıf öğrencileri belirtir")
-"""
-
 #Sınıf özellikleri
 class ogrenci():
-    isim = "er"
+    isim = []
     soyisim = "GUL"
-    yas = "50"
+    yas = 38
     bolum = "Cevre Muhendisligi"
 
 
-
-#sinif örneklendirilmesi
-ertugrul = ogrenci()
-irmak = ogrenci()
-emirhan = ogrenci()
-gizem = ogrenci ()
-
-
 #sınıfların özelliklerine erişmek
-print(irmak.isim)
-print(irmak.soyisim)
-print(irmak.yas)
-print(irmak.bolum)
-irmak.isim #eski versiyonlarda yazdırma bu şekilde oluyor mu?
+print(ogrenci.isim)
+print(ogrenci.soyisim)
+print(ogrenci.yas)
+print(ogrenci.bolum)
+
 
 #sınıfların özelliklerini değiştirme
 ogrenci.soyisim = "Cicek"
+ogrenci.yas = "Deniz Aras"
+
+#sınıfların Örneklendirilmesi
+ertugrul = ogrenci()
+irmak = ogrenci()
+emirhan = ogrenci()
+gizem = ogrenci()
 
 
-print(ogrenci.soyisim)
-print(irmak.soyisim)
-print(emirhan.soyisim)
-print(ertugrul.soyisim)
-print(gizem.soyisim)
+print (ertugrul.isim)
+print (irmak.isim)
+print (emirhan.isim)
+print (gizem.isim)
 
+ertugrul.isim.append ("Ertuğrul")
+
+print (ertugrul.isim)
+print (irmak.isim)
+print (emirhan.isim)
+print (gizem.isim)
 
 
 class ogrenci2():
     def __init__(self):
         self.soyisim = []
-        self.yas = []
+        self.bolum = []
 
 ertugrul = ogrenci2()
 irmak = ogrenci2()
 emirhan = ogrenci2()
 gizem = ogrenci2()
 
+print (ertugrul.soyisim)
+print (irmak.soyisim)
+print (emirhan.soyisim)
+print (gizem.soyisim)
+
+
 ertugrul.soyisim.append ("GUL")
-irmak.soyisim.append ("SABUNCU")
-emirhan.soyisim.append ("OYMAK")
-gizem.soyisim.append ("KALENDER")
-ertugrul.yas.append ("38")
 
-
-
-print(ogrenci.soyisim)
 print(irmak.soyisim)
 print(emirhan.soyisim)
 print(ertugrul.soyisim)
 print(gizem.soyisim)
 
+irmak.soyisim.append ("SABUNCU")
+emirhan.soyisim.append ("OYMAK")
+gizem.soyisim.append ("KALENDER")
 
-print(dir(ogrenci2))
+
+print(irmak.soyisim)
+print(emirhan.soyisim)
+print(ertugrul.soyisim)
+print(gizem.soyisim)
