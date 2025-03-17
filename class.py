@@ -31,7 +31,7 @@ print(irmak.isim)
 print(irmak.soyisim)
 print(irmak.yas)
 print(irmak.bolum)
-
+irmak.isim #eski versiyonlarda yazdırma bu şekilde oluyor mu?
 
 #sınıfların özelliklerini değiştirme
 ogrenci.soyisim = "Cicek"
@@ -68,3 +68,6 @@ print(irmak.soyisim)
 print(emirhan.soyisim)
 print(ertugrul.soyisim)
 print(gizem.soyisim)
+
+
+print(dir(ogrenci2))
