@@ -15,7 +15,7 @@ print(ogrenci.bolum)
 
 #sınıfların özelliklerini değiştirme
 ogrenci.soyisim = "Cicek"
-ogrenci.yas = 40
+ogrenci.yas = "Deniz Aras"
 
 #sınıfların Örneklendirilmesi
 ertugrul = ogrenci()
