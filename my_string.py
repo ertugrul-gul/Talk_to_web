@@ -1,15 +1,30 @@
-mystring='Ali ve Veli'
+my_str= "Deniz Aras GÜL"
 
-print(mystring[0]) #ilk elemanı yazdır.
-print(mystring[-2]) # eksi işareti (-) sondan başlanılması gerektiğini ifade eder
+# for x in "Deniz Aras GÜL":
+#     print (x)
+#
+#
+# for d in my_str:
+#     print (d)
+# print(len (my_str))
+#
+# print ("Deniz" in my_str)
+# print ("Aysun" not in my_str)
+# if "Aysun" not in my_str:
+#     print("Hayır, 'Aysun' kelimesi stringde yok.")
 
-print(mystring[::2]) # hiçbirşey yazılmaması default olarak
-print(mystring[::-2])
+"""
+Dilimlemeler [ilk değer : son değer : adım sayısı] şeklinde gerçekleşir.
+ilk değer daima "0" olarak kabul edilir.
+Dilimlemeler yapılırken daima soldan - sağa doğru yapılır. Başına - konulması durumu tersine çevirir.
+"""
 
-print(mystring[-1:0:-3])
 
-my_str = 'deneme bir şey deniyoruz "bunu nasıl göstereceksin"'
-print (my_str)
+print(my_str[0]) #ilk elemanı yazdır.
+print(my_str[-2]) # eksi işareti (-) sondan başlanılması gerektiğini ifade eder
+print(my_str[::2]) # hiçbirşey yazılmaması default olarak başlangıç-bitişi ifade eder. 2'de adım sayısıdır.
+print(my_str[::-2]) # bu seferde -2 olduğundan sağdan sola doğru hareket eder.
+print(my_str[-1:0:-3]) # sondan başa doğru 3'er atlayarak dilimleme yapılmasını söyler
 
 
 
